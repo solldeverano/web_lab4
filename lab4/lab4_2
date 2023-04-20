@@ -1,0 +1,71 @@
+// Task 1 - add new fields name with value "Felix", and age - 7
+const objWithNewFields = {
+ 
+};
+
+// code here
+objWithNewFields.name = "Felix";
+objWithNewFields.age = 7;
+console.log(objWithNewFields)
+
+// Task 2 - add new field sum, that should contain sum of fields a + b
+// don't modify the object directly and do it by updating the value by key
+const objWithSum = {
+  a: 10,
+  b: 10
+};
+// code here
+objWithSum.sum = objWithSum.a + objWithSum.b;
+
+console.log(objWithSum)
+// Task 3 - rewrite nums array with [2,3] array
+//  don't modify the object directly and do it by updating the value by key
+const objWithNums = {
+  nums: [1]
+};
+// code heres
+objWithNums.nums = [2, 3];
+// Task 4 - using if statement, check if n bigger than 10
+// update value in info field
+// expected value "n is bigger than 10"
+// don't modify the object directly and do it by updating the value by key
+const objWithRes = {
+  n: 13,
+  info: "n is smaller than 20"
+};
+// code here
+if (objWithRes.n > 10) {
+  objWithRes.info = "n is bigger than 10";
+}
+// Task 5 - check the variable "dayNumber" and overwrite
+// the weekday name in "weekday" variable using switch..case
+const dayNumber = 2;
+let weekday = null;
+
+
+switch(dayNumber) {
+  case 0:
+    weekday = "Monday";
+    break;
+  case 1:
+    weekday = "Tuesday";
+    break;
+  case 2:
+    weekday = "Wednesday";
+    break;
+  case 3:
+    weekday = "Thursday";
+    break;
+  case 4:
+    weekday = "Friday";
+    break;
+  case 5:
+    weekday = "Saturday";
+    break;
+  case 6:
+    weekday = "Sunday";
+    break;
+  default:
+    weekday = "Invalid day number";
+}
+console.log(weekday)
